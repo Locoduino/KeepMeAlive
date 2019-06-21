@@ -79,13 +79,13 @@ This is an implementation of a [method described by Philip Koopman](https://bett
 Each module has a unique number. Numbers can be declared as constants by using an enum. As many as 32 modules can be defined.
 
 ```C
-const uint8_t kModuleCount = 3;
+const uint8_t kModuleCount = 4;
 enum { CAN_ISR_MODULE, SERVO_MODULE, LED_MODULE, DETECTION_MODULE };
 ```
 
 ### setModuleCount(*count*)
 
-Set the number of module used. By default 0 modules are set. ```count``` should have a value between 1 and 32. If a value outside this interval is given, ```setModuleCOunt``` has no effect.
+Set the number of module used. By default 0 modules are set. ```count``` should have a value between 1 and 32. If a value outside this interval is given, ```setModuleCount``` has no effect.
 
 ### alive(*module*)
 
